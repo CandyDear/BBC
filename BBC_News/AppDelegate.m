@@ -7,7 +7,10 @@
 //
 
 #import "AppDelegate.h"
-
+#import "LeftViewController.h"
+#import "MMDrawerController.h"
+#import "MMDrawerVisualState.h"
+#import "BaseBarViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,7 +19,35 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    //左边控制栏
+    LeftViewController *leftVC = [[LeftViewController alloc] init];
+    //中间控制器
+    BaseBarViewController *barVC = [[BaseBarViewController alloc] init];
+    
+    MMDrawerController *drawerVC = [[MMDrawerController alloc] initWithCenterViewController:barVC leftDrawerViewController:leftVC];
+//    drawerVC.         
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    [drawerVC setMaximumLeftDrawerWidth:320];
+    //设置手势区域
+    [drawerVC setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
+    [drawerVC setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
+    
+    //设置动画效果
+    MMDrawerControllerDrawerVisualStateBlock block = [MMDrawerVisualState swingingDoorVisualStateBlock];
+    [drawerVC setDrawerVisualStateBlock:block];
+    //状态栏
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    self.window.rootViewController = drawerVC;
+    
+    UIApplication *app = [UIApplication sharedApplication];
+    //设置状态栏的颜色
+    app.statusBarStyle  = UIStatusBarStyleLightContent;
+//    [app setStatusBarStyle:UIStatusBarStyleLightContent];
+    
+
     return YES;
 }
 

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>group</key>
+		<string>功能</string>
+		<key>teamer</key>
+		<array>
+			<string>生词本</string>
+			<string>查看下载</string>
+			<string>意见反馈</string>
+		</array>
+	</dict>
+	<dict>
+		<key>group</key>
+		<string>设置</string>
+		<key>teamer</key>
+		<array>
+			<string>软件设置</string>
+		</array>
+	</dict>
+	<dict>
+		<key>group</key>
+		<string>关于</string>
+		<key>teamer</key>
+		<array>
+			<string>关于爱语吧</string>
+			<string>推荐给朋友们</string>
+			<string>使用帮组</string>
+		</array>
+	</dict>
+</array>
+</plist>

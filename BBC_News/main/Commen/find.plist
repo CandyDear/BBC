@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>group</key>
+		<string>双语新闻</string>
+		<key>members</key>
+		<array>
+			<string>英语头条</string>
+		</array>
+	</dict>
+	<dict>
+		<key>group</key>
+		<string>应用广场</string>
+		<key>members</key>
+		<array>
+			<string>听说系列应用</string>
+			<string>考试系列应用</string>
+			<string>爱语吧旗下iOS应用</string>
+		</array>
+	</dict>
+	<dict>
+		<key>group</key>
+		<string>单词天地</string>
+		<key>members</key>
+		<array>
+			<string>经典谚语</string>
+			<string>单词本</string>
+		</array>
+	</dict>
+	<dict>
+		<key>group</key>
+		<string>好友交流</string>
+		<key>members</key>
+		<array>
+			<string>发现朋友</string>
+		</array>
+	</dict>
+	<dict>
+		<key>group</key>
+		<string>爱语吧活动</string>
+		<key>members</key>
+		<array>
+			<string>积分兑换</string>
+			<string>充值送礼</string>
+		</array>
+	</dict>
+</array>
+</plist>
